@@ -7,17 +7,17 @@ function nearEvent(eventHour, currentHour, currentMinute) {
 }
 
 function kitchenOperate(currentMinute, currentDay, currentHour, kitchenStart, kitchenStartBreak, kitchenEndBreak, kitchenEndWeekday, kitchenEndWeekend) {
-    var kitchenBreak = currentHour > kitchenStartBreak && (currentHour === kitchenEndBreak && currentMinute < 30 || currentHour < kitchenEndBreak);
+    var kitchenBreak = currentHour >= kitchenStartBreak && (currentHour === kitchenEndBreak && currentMinute < 30 || currentHour < kitchenEndBreak);
     if (currentDay <= 4) {
         //Weekday
-        if (currentHour > kitchenStart && currentHour < kitchenEndWeekday && !kitchenBreak) {
+        if (currentHour >= kitchenStart && currentHour < kitchenEndWeekday && !kitchenBreak) {
             return true;
         } else {
             return false;
         }
     } else {
         //Weekend
-        if (currentHour > kitchenStart && currentHour < kitchenEndWeekend && !kitchenBreak) {
+        if (currentHour >= kitchenStart && currentHour < kitchenEndWeekend && !kitchenBreak) {
             return true;
         } else {
             return false;
@@ -26,7 +26,7 @@ function kitchenOperate(currentMinute, currentDay, currentHour, kitchenStart, ki
 }
 
 function venueOperate(currentHour, venueServiceStart, venueServiceEnd) {
-    if (currentHour > venueServiceStart && currentHour < venueServiceEnd) {
+    if (currentHour >= venueServiceStart && currentHour < venueServiceEnd) {
         return true;
     } else {
         return false;

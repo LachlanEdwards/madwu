@@ -1,0 +1,98 @@
+<div class="subtitle">
+    <h4>Extraordinary. Cherised. Unique. A gift card is the gift that will not be forgotten.</h4>
+    <p>We securely process and handle your sensitive data in accordance with our <a href="#">Privacy Policy</a>.</p>
+</div>
+<form>
+    <div class="form-group">
+        <label for="value">Buyers Name</label>
+        <input type="text" class="form-control" id="value" placeholder="Taibo Wu">
+    </div>
+    <div class="form-group">
+        <label for="value">Recievers Name</label>
+        <input type="text" class="form-control" id="value" placeholder="John Doe">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="address">Address</label>
+        <input type="text" class="form-control" id="address" placeholder="71 Eagle Street">
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" class="form-control" id="city" placeholder="Brisbane City">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" class="form-control" id="state" placeholder="Queensland">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="city">Postal Code</label>
+                <input type="number" class="form-control" id="city" placeholder="4000">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" class="form-control" id="country" placeholder="Australia" disabled>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="value">Reciever Method</label>
+        <div class="row">
+            <div class="col-md-6">
+                <button type="button" class="btn button active" id="digitalButton" onclick="document.getElementById('digitalRadio').checked=true;this.classList+=' active';document.getElementById('postalButton').classList='btn button';">Digital</button>
+            </div>
+            <div class="col-md-6">
+                <button type="button" class="btn button" id="postalButton" onclick="document.getElementById('postalRadio').checked=true;this.classList+=' active';document.getElementById('digitalButton').classList='btn button';">Postal</button>
+            </div>
+        </div>
+        <div class="radio">
+            <label>
+                                                <input type="radio" name="method" id="digitalRadio" value="digital" checked>E-Mail
+                                            </label>
+        </div>
+        <div class="radio">
+            <label>
+                                                <input type="radio" name="method" id="postalRadio" value="postal">Postal
+                                            </label>
+        </div>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="value">Value</label>
+        <input type="text" class="form-control" id="value" placeholder="$100">
+    </div>
+    <div class="form-group">
+        <label for="cardholder">Cardholder</label>
+        <input type="text" class="form-control" id="cardholder" placeholder="Taibo Wu">
+    </div>
+    <div class="form-group">
+        <label for="cardno">Card No.</label>
+        <input type="text" class="form-control" id="cardno" placeholder="∙∙∙∙ ∙∙∙∙ ∙∙∙∙ ∙∙∙∙">
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="ccv">CCV</label>
+                <input type="text" class="form-control" id="ccv" placeholder="∙∙∙">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="expiry">Expiry</label>
+                <input type="text" class="form-control" id="expiry" placeholder="MM/YY">
+            </div>
+        </div>
+    </div>
+    <br>
+    <button type="submit" class="btn button">Purchase</button>
+</form>

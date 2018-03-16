@@ -10,6 +10,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
+    <link href="fontawesome/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
 </head>
 
 <body>
@@ -23,10 +24,11 @@
                         <li class="list-item"><a href="#dining-menu">Dining menus</a></li>
                         <li class="list-item"><a href="#private-dining">Private Dining</a></li>
                         <li class="list-item"><a href="#venue-functions">Venue Functions</a></li>
-                        <li class="list-item"><a href="#gift-cards">Gift Cards</a></li>
+                        <li class="list-item"><a href="#gallery">Gallery</a></li>
                         <li class="list-item"><a href="#events">Events</a></li>
+                        <li class="list-item"><a href="#faq">FAQ</a></li>
                         <li class="list-item"><a href="#contact">Contact</a></li>
-                        <li class="list-item reserve-now"><a href="#">Reserve Now</a></li>
+                        <li class="list-item"><a href="https://www.opentable.com.au/r/madame-wu-reservations-brisbane?restref=21428" target="_blank">Reserve Now</a></li>
                     </ul>
                 </div>
             </div>
@@ -38,13 +40,13 @@
                         <li class="list-item"><a href="#dining-menu">Dining menus</a></li>
                         <li class="list-item"><a href="#private-dining">Private Dining</a></li>
                         <li class="list-item"><a href="#venue-functions">Venue Functions</a></li>
-                        <li class="list-item"><a href="#gift-cards">Gift Cards</a></li>
+                        <li class="list-item"><a href="#gallery">Gallery</a></li>
                         <li class="list-item"><a href="#events">Events</a></li>
+                        <li class="list-item"><a href="#faq">FAQ</a></li>
                         <li class="list-item"><a href="#contact">Contact</a></li>
-                        <li class="list-item reserve-now"><a href="#">Reserve Now</a></li>
+                        <li class="list-item reserve-now"><a href="https://www.opentable.com.au/r/madame-wu-reservations-brisbane?restref=21428" target="_blank">Reserve Now</a></li>
                     </ul>
-                    <div class="venue-hours text-center"></div>
-                    <!--<div class="disclaimer text-center">Madame Wu recommends a twelve hour buffer for reserving a table via Messagebank or e-mail. Do not assume a reservation as been made unless confirmation has been recieved from OpenTable or Madame Wu.</div>-->
+                    <div class="venue-hours text-center"><img src="img/loading.png" alt="loading" width="14px" /></div>
                 </div>
             </div>
             <div class="col-md-9 col-sm-12 right">
@@ -67,7 +69,7 @@
                     <div class="content-container coversize-solid solidid-light-purple" id="dining-menu">
                         <h2 class="text-center sectitle">Dining Menus</h2>
                         <div class="clearfix">
-                            <div class="col-md-8 col-md-offset-2">
+                            <div class="col-lg-offset-2 col-lg-8 ">
                                 <div class="col-sm-4 col-md-3">
                                     <a href="docs/menu/dining_menu.pdf" target="_blank">
                                         <div class="panel panel-default">
@@ -84,7 +86,7 @@
                                         <div class="panel panel-default">
                                             <div class="panel-body">
                                                 <img src="img/acrobat.png" class="imid-pdf" alt="Adobe PDF file icon">
-                                                <h6 class="text-center">Gluten Free</h6>
+                                                <h6 class="text-center">Gluten Free<sup>3</sup></h6>
                                                 <small class="text-center"><?php echo number_format(filesize("docs/menu/gluten_free_menu.pdf") / 1048576, 2);?> MB</small>
                                             </div>
                                         </div>
@@ -95,7 +97,7 @@
                                         <div class="panel panel-default">
                                             <div class="panel-body">
                                                 <img src="img/acrobat.png" class="imid-pdf" alt="Adobe PDF file icon">
-                                                <h6 class="text-center">Lunch Banquet</h6>
+                                                <h6 class="text-center">Lunch Banquet<sup>2</sup></h6>
                                                 <small class="text-center"><?php echo number_format(filesize("docs/menu/lunch_banquet.pdf") / 1048576, 2);?> MB</small>
                                             </div>
                                         </div>
@@ -156,9 +158,13 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-md-12 fine-print">
-                                    <div class="print text-center" id="1"><sup>1</sup> Madame Wu requires two days’ advice to prepare this order and thus it cannot be ordered within two days of a reservation. Madame Wu cannot cater this order for Walk-In Guests, a reservation is required. Madame Wu requires three hours to serve this order, meaning a booking before 6PM on Weekdays and before 7PM on Weekends is required. Be advised that Madame Wu cannot make this order during our lunchtime service.</div>
-                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="fine-print col-lg-offset-2 col-lg-8 ">
+                                <div class="print text-center" id="1"><sup>1</sup> Madame Wu requires two days’ advice to prepare this order and thus it cannot be ordered within two days of a reservation. Madame Wu cannot cater this order for Walk-In Guests, a reservation is required. Madame Wu requires three hours to serve this order, meaning a booking before 6PM on Weekdays and before 7PM on Weekends is required. Be advised that Madame Wu cannot make this order during our lunchtime service.</div>
+                                <div class="print text-center" id="2"><sup>2</sup> Madame Wu's lunctime set-menu is altered day-to-day.</div>
+                                <div class="print text-center" id="3"><sup>3</sup> Please inform your waitperson of any dietary requirements or allergies.</div>
                             </div>
                         </div>
                     </div>
@@ -167,7 +173,7 @@
                     <div class="content-container coversize-solid solidid-purple" id="private-dining">
                         <h2 class="text-center sectitle">Private Dining</h2>
                         <div class="clearfix">
-                            <div class="col-md-8 col-md-offset-2">
+                            <div class="col-lg-offset-2 col-lg-8 ">
                                 <div class="feature-list clearfix">
                                     <div class="feature-item col-md-4 col-sm-12">
                                         <img src="img/301-kim-9914.jpg" alt="..." width="100%">
@@ -198,7 +204,7 @@
                                     </div>
                                 </div>
                                 <div class="reserve">
-                                    <button type="button" class="btn button">Enquire Now</button>
+                                    <a type="button" class="btn button" href="#contact">Enquire Now</a>
                                 </div>
                             </div>
                         </div>
@@ -208,7 +214,7 @@
                     <div class="content-container coversize-solid solidid-light-purple" id="venue-functions">
                         <h2 class="text-center sectitle">Venue Functions</h2>
                         <div class="clearfix">
-                            <div class="col-md-8 col-md-offset-2">
+                            <div class="col-lg-offset-2 col-lg-8 ">
                                 <div class="feature-list clearfix">
                                     <h4 class="subtitle">Catering:</h4>
                                     <div class="feature-item col-md-4 col-sm-12">
@@ -246,59 +252,23 @@
                                     </div>
                                 </div>
                                 <div class="reserve">
-                                    <button type="button" class="btn button">Enquire Now</button>
-                                    <button type="button" class="btn button">Functions Pack</button>
+                                    <a type="button" class="btn button" href="#contact">Enquire Now</a>
+                                    <a type="button" class="btn button" href="docs/pack/functions_pack.pdf" target="_blank">Functions Pack</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="void">
-                    <div class="content-container coversize-solid solidid-purple" id="gift-card">
-                        <h2 class="text-center sectitle">Gift Cards</h2>
+                    <div class="content-container coversize-solid solidid-purple" id="gallery">
+                        <h2 class="text-center sectitle">Gallery</h2>
                         <div class="clearfix">
-                            <div class="col-md-offset-2 col-md-8">
-                                <div class="subtitle">
-                                    <h4>Extraordinary. Cherised. Unique. A gift card is the gift that will not be forgotten.</h4>
-                                    <p>We securely process and handle your sensitive data in accordance with our <a href="#">Privacy Policy</a>.</p>
+                            <div class="col-lg-offset-2 col-lg-8 ">
+                                <div class="clearfix">
+                                    <div class="gallery">
+                                        <?php include("inc/gallery.php"); ?>
+                                    </div>
                                 </div>
-                                <form>
-                                    <div class="form-group">
-                                        <label for="value">Buyers Name</label>
-                                        <input type="text" class="form-control" id="value" placeholder="Taibo Wu">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="value">Recievers Name</label>
-                                        <input type="text" class="form-control" id="value" placeholder="John Doe">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="value">Value</label>
-                                        <input type="text" class="form-control" id="value" placeholder="$100">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="cardholder">Cardholder</label>
-                                        <input type="text" class="form-control" id="cardholder" placeholder="Taibo Wu">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="cardno">Card No.</label>
-                                        <input type="text" class="form-control" id="cardno" placeholder="∙∙∙∙ ∙∙∙∙ ∙∙∙∙ ∙∙∙∙">
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="ccv">CCV</label>
-                                                <input type="text" class="form-control" id="ccv" placeholder="∙∙∙">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="expiry">Expiry</label>
-                                                <input type="text" class="form-control" id="expiry" placeholder="MM/YY">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button type="submit" class="btn button">Purchase</button>
-                                </form>
                             </div>
                         </div>
                     </div>
@@ -307,153 +277,30 @@
                     <div class="content-container coversize-solid solidid-light-purple" id="events">
                         <h2 class="text-center sectitle">Events</h2>
                         <div class="clearfix">
-                            <div class="col-md-offset-2 col-md-8">
-                                <?php
-                                    function sortDate($a, $b) {
-                                        $yday = getdate()["yday"];
-                                        $a = $a['DayInYear'] - $yday;
-                                        $b = $b['DayInYear'] - $yday;
-                                        return $a - $b;
-                                    }
-
-
-                                    function fetchEvents() {
-                                        $pdo = include('inc/connect.php');
-
-                                        $statement = $pdo->prepare("SELECT * FROM Events");
-                                        $statement->execute();
-                                        $results = $statement->fetchall();
-                                        usort($results, "sortDate");
-                                        foreach ($results as $item) {
-
-                                            $index = array_search($item, $results);
-                                            if ($index === 0) {
-                                                echo "<div class=\"clearfix\">";
-                                            }
-                                            if ($index % 3 === 0 && $index != 0) {
-                                                echo "</div>";
-                                                echo "<div class=\"clearfix last-clearfix\">";
-                                            };
-
-                                            echo "<div class=\"col-md-4\">";
-                                                echo "<div class=\"event-item\">";
-                                                    echo "<div class=\"date\">{$item['Day']} {$item['Month']}</div>";
-                                                    echo "<div class=\"title\">{$item['Title']}</div>";
-                                                    echo "<div class=\"details\">{$item['Desc']}</div>";
-                                                    if ($item['Flyer'] != null) {
-                                                        echo "<div class=\"flyer\"><a href=\"http://{$_SERVER['HTTP_HOST']}{$item['Flyer']}\">Flyer</a></div>";
-                                                    } else {
-                                                        echo "<div class=\"flyer\">No Flyer</div>";
-                                                    };
-                                                echo "</div>";
-                                            echo "</div>";
-
-                                            if ($index - 1 === count($results)) {
-                                                echo "</div>";
-                                            };
-
-                                        };
-                                    };
-                                    fetchEvents();
-                                ?>
+                            <div class="col-lg-offset-2 col-lg-8 ">
+                                <?php include("inc/events.php"); ?>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="void">
-                <div class="content-container coversize-solid solidid-purple" id="faq">
-                    <h2 class="text-center sectitle">FAQ</h2>
-                    <div class="clearfix">
-                        <div class="col-md-offset-2 col-md-8">
-                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading exposed" role="tab" id="headingOne" onclick="collapseEvent(this)">
-                                        <h4 class="panel-title">
-                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">What're your opening hours? <div class="caret"></div></a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                        <div class="panel-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="headingTwo" onclick="collapseEvent(this)">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Why do reservations of 8 or more have to dine from a set-menu? <div class="caret"></div></a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                        <div class="panel-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="headingThree">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Do you split bills? <div class="caret"></div></a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                        <div class="panel-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                        </div>
-                                    </div>
+                <div class="void">
+                    <div class="content-container coversize-solid solidid-purple" id="faq">
+                        <h2 class="text-center sectitle">FAQ</h2>
+                        <div class="clearfix">
+                            <div class="col-lg-offset-2 col-lg-8 ">
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <?php include("inc/faq.php"); ?>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="void">
-                <div class="content-container coversize-solid solidid-light-purple" id="contact">
-                    <h2 class="text-center sectitle">Contact</h2>
-                    <div class="clearfix">
-                        <div class="col-md-offset-2 col-md-4">
-                            <?php
-                                function sendMail() {
-                                    if(isset($_POST["sender"])) {
-                                        $error = null;
-                                        $sender = htmlspecialchars($_POST["sender"]);
-                                        if (strlen($sender) > 50) {;
-                                            $error = "Invalid: Sender input too large. Limit to 50 characters.";
-                                        };
-
-                                        $subject = htmlspecialchars($_POST["subject"]);
-                                        if (strlen($subject) > 50) {
-                                            $error = "Invalid: Subject input too large. Limit to 50 characters.";
-                                        };
-
-                                        $email = htmlspecialchars($_POST["e-mail"]);
-                                        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                                          $error = "Invalid: E-Mail field doesn't meet validation standards."; 
-                                        };
-
-                                        $phone = htmlspecialchars($_POST["phone"]);
-                                        if (strlen($subject) > 50) {
-                                            $error = "Invalid: Phone input too large. Limit to 50 characters.";
-                                        };
-
-                                        $body = htmlspecialchars($_POST["body"]);
-                                        if (strlen($subject) > 500) {
-                                            $error = "Invalid: Body input too large. Limit to 500 characters.";
-                                        };
-
-                                        $message = "SENDER: $sender\nPHONE: $phone\nE-MAIL: $email\nBODY: $body";
-                                        if ($error === null) {
-                                            mail("au_edwardsl@outlook.com", $subject, $message);
-                                            echo "<div class=\"success\">Success. We'll try to reply within twelve hours.</div>";
-                                        } else {
-                                            echo "<div class=\"error\">$error</div>";
-                                        }
-                                    }
-                                    
-                                };
-                                sendMail();
-                            ?>
+                <div class="void">
+                    <div class="content-container coversize-solid solidid-light-purple" id="contact">
+                        <h2 class="text-center sectitle">Contact</h2>
+                        <div class="clearfix">
+                            <div class="col-lg-offset-2 col-lg-4 col-md-offset-1 col-md-5">
+                                <?php include("inc/sendmail.php"); ?>
                                 <form action="/madwu/index.php#contact" method="post">
                                     <div class="form-group">
                                         <label for="value">Sender</label>
@@ -477,46 +324,54 @@
                                     </div>
                                     <button type="submit" class="btn button">Send</button>
                                 </form>
+                            </div>
+                            <div class="col-md-5 col-lg-4">
+                                <div class="item">
+                                    <h4>Phone:</h4>
+                                    <p>07 3229 5070</p>
+                                </div>
+                                <div class="item">
+                                    <h4>E-Mail:</h4>
+                                    <p>info@madamewu.com.au</p>
+                                </div>
+                                <div class="item">
+                                    <h4>Address:</h4>
+                                    <p>Upper Plaza Level, Riparian Plaza<br>71 Eagle Street, Brisbance City<br>4000, Queensland<br>Australia</p>
+                                </div>
+                                <div class="item">
+                                    <h4>Opening Hours:</h4>
+                                    <p>Sunday through Thursday: Kitchen services 12:00PM til 2:45PM, 5:30PM til 8:45PM. Bar services 12:00PM til late.</p>
+                                    <p>Friday through Saturday: Kitchen services 12:00PM til 2:45PM, 5:30PM til 9:45PM. Bar services 12:00PM til late.</p>
+                                </div>
+                                <div class="item">
+                                    <h4>Disclaimer:</h4>
+                                    <p>Madame Wu recommends a twelve hour buffer for reserving a table via Messagebank or e-mail. Do not assume a reservation as been made unless confirmation has been recieved from OpenTable or Madame Wu.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="item">
-                                <h4>Phone:</h4>
-                                <p>07 3229 5070</p>
+                    </div>
+                </div>
+                <div class="void">
+                    <div class="coversize-solid solidid-black" id="footer">
+                        <div class="clearfix">
+                            <div class="col-xs-4">
+                                <a href="https://www.facebook.com/MadameWuBrisbane/" target="_blank"><i class="fab fa-facebook"></i></a>
                             </div>
-                            <div class="item">
-                                <h4>E-Mail:</h4>
-                                <p>info@madamewu.com.au</p>
+                            <div class="col-xs-4">
+                                <a href="https://www.instagram.com/madamewubris/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
                             </div>
-                            <div class="item">
-                                <h4>Address:</h4>
-                                <p>Upper Plaza Level, Riparian Plaza<br>71 Eagle Street, Brisbance City<br>4000, Queensland<br>Australia</p>
-                            </div>
-                            <div class="item">
-                                <h4>Opening Hours:</h4>
-                                <p>Sunday through Thursday: Kitchen services 12:00PM til 2:45PM, 5:30PM til 8:45PM. Bar services 12:00PM til late.</p>
-                                <p>Friday through Saturday: Kitchen services 12:00PM til 2:45PM, 5:30PM til 9:45PM. Bar services 12:00PM til late.</p>
-                            </div>
-                            <div class="item">
-                                <h4>Disclaimer:</h4>
-                                <p>Madame Wu recommends a twelve hour buffer for reserving a table via Messagebank or e-mail. Do not assume a reservation as been made unless confirmation has been recieved from OpenTable or Madame Wu.</p>
+                            <div class="col-xs-4">
+                                <a href="https://www.tripadvisor.com.au/Restaurant_Review-g255068-d6537605-Reviews-Madame_Wu-Brisbane_Brisbane_Region_Queensland.html" target="_blank"><i class="fab fa-tripadvisor"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="void">
-                <div class="coversize-solid solidid-black" id="footer">
-                    <div class="cr">&copy; Madame Wu. Madame Wu is a<a href="http://rawgroup.com.au" target="_blank"><img src="img/raw-group-logo.png" alt="rawGROUP" height="24px"></a>venture.</div>
-                </div>
-            </div>
         </div>
     </div>
-    <script src="js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/scroll-spy.js"></script>
-    <script src="js/accordion-state.js"></script>
-    <script src="js/op-hour.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
